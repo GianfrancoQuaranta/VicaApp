@@ -1,0 +1,19 @@
+To do:
+- Crear repo del proyecto VicaApp;
+- Crear base de datos en atlas de products para que no se guarte como "test";
+- Crear schema de productos;
+- Aprender cómo copiar, cortar y pegar texto en vim;
+
+
+Doing:
+- 
+
+
+Done:
+- Crear base de datos en atlas con mi cuenta;
+- Instalar dotenv;
+- Crear archivo .env con sus variables;
+- Instalar mongoose;
+- Configurar mongoose y la conexión con la base de datos en un helper;
+- Crar archivo txt de tareas;
+- Pasar todo a ES6 y configurar babel para eso;
