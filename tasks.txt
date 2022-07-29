@@ -1,7 +1,13 @@
 To do:
-- Crear base de datos en atlas de products para que no se guarte como "test";
+
 - Crear schema de productos;
 - Aprender cómo copiar, cortar y pegar texto en vim;
+- Hacer el crud de product;
+- Testear el Schema de product;
+- Hacer el schema de Brand;
+- Testear el schema de Brand;
+- Testear la unión entre el Product schema y el brand schema.
+- 
 
 
 Doing:
@@ -17,3 +23,4 @@ Done: (Las últimas son las últimas en hacerse);
 - Crar archivo txt de tareas;
 - Pasar todo a ES6 y configurar babel para eso;
 - Crear repo del proyecto VicaApp;
+- Crear base de datos en atlas de products para que no se guarte como "test";

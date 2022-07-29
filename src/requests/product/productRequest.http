@@ -1,0 +1,21 @@
+// Product requests;
+
+### Product list;  --> Todavía no habilitado;
+GET http://127.0.0.1:9090/p/list HTTP/1.1
+
+### Product detail; --> Todavía no habilitado;
+GET http://127.0.0.1:9090/p/ACA VA EL ID HTTP/1.1
+
+### Product create; 
+POST http://127.0.0.1:9090/p/create HTTP/1.1
+Content-Type: application/json
+
+    
+    {
+        "name": "Producto 1",
+        "description": "Descripción del producto 1",
+        "price": "100",
+        "quantity": "10",
+        "discount": "0",
+        "image": "http://www.google.com/image.jpg"
+    }
