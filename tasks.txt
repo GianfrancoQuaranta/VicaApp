@@ -1,17 +1,35 @@
+Doing:
+- Crear la unión entre la colección de product y la colección de brand;
+
+
 To do:
 
-- Crear schema de productos;
+- Hacer el Category schema;
+- Unir el Category schema con el Product schema;
+- Testeas el Category schema;
+- Hacer el crud de Category;
+
+- Agregar la propiedad "state" al schema de products; --> Todo tiene que tener state para poder sacarlo de actividad y no necesariamente borrarlo.
+
+
+Ideas:
+--> Pensar en cómo sería hacer un ETL con este proyecto y dos bases de datos;
+--> Podría hacerle un carrito;
+--> Podría hacerle un login;
+--> Podría hacerle un register;
+--> Podría hacerle un user profile;
+--> Podría hacer el backoffice para que solo puedan usarlo los usuarios con permiso de admin;
+--> Podría hacer el front con React y conectarlo para aprender más de la comunicación entre el back y el front;
+--> A este proyecto le quiero agregar JWT;
+
+
+Others To do:
 - Aprender cómo copiar, cortar y pegar texto en vim;
-- Hacer el crud de product;
-- Testear el Schema de product;
-- Hacer el schema de Brand;
-- Testear el schema de Brand;
-- Testear la unión entre el Product schema y el brand schema.
-- 
 
 
-Doing:
-- 
+
+
+
 
 
 Done: (Las últimas son las últimas en hacerse);
@@ -24,3 +42,23 @@ Done: (Las últimas son las últimas en hacerse);
 - Pasar todo a ES6 y configurar babel para eso;
 - Crear repo del proyecto VicaApp;
 - Crear base de datos en atlas de products para que no se guarte como "test";
+- Ver porqué no se guardan los productos en la base de datos VicaApp, dentro de la colección products.
+- Crear schema de productos;
+- Instalar y configurar Morgan;
+- Create de product;
+- List de product;
+- Delete de product;
+- Hacer el crud de product;
+- Testear el Schema de product;
+- Hacer el schema de Brand;
+- Hacer crud de Brand;
+    - Hacer el list de Brand; --> Done
+    - Hacer el detail de Brand; --> Done
+    - Hacer el create de Brand; --> Done
+    - Hacer el update de Brand;  --> Done
+    - Hacer el delete de Brand; --> Done
+- Hacer que, al crear un producto, se almacene en la marca del producto, el producto en cuestión a la lista de products de la marca;
+- Hacer que product traiga brand;
+- Hacer que brand traiga los productos asociados;
+- Testear la unión entre el Product schema y el brand schema.
+- Testear el schema de Brand;

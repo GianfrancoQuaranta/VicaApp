@@ -1,7 +1,7 @@
-// Require el schema de Mongoose;
+// Import Mongoose;
 import mongoose from "mongoose";
 
-// Create el schema de Mongoose;
+// Schema mongoose;
 const { Schema } = mongoose;
 
 const productSchema = new Schema ({
@@ -31,7 +31,9 @@ const productSchema = new Schema ({
 	},
 	brand: {
 		type: Schema.ObjectId,
-		ref: "brand"
+		ref: "brand",
+		required: true,
+		unique: true
 	},
 	image: [
 			{

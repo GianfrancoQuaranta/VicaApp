@@ -3,14 +3,17 @@ import express from "express";
 
 const router = express.Router();
 
-// import routes; 
-import productRoute from "./product/productRoute.js";
-// import userRoute from "./user/userRoute.js";
-
+ 
 // productRoute;
+import productRoute from "./product/productRoute.js";
 router.use("/p", productRoute);
 
+// brandRoute;
+import brandRoute from "./brand/brandRoute.js";
+router.use("/b", brandRoute);
+
 // userRoute;
+// import userRoute from "./user/userRoute.js";
 // router.use("/u", userRoute);
 
 // ruta main;

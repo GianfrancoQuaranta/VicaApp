@@ -4,7 +4,7 @@
 GET http://127.0.0.1:9090/p/list HTTP/1.1
 
 ### Product detail; --> Todavía no habilitado;
-GET http://127.0.0.1:9090/p/ACA VA EL ID HTTP/1.1
+GET http://127.0.0.1:9090/p/62e58337a93666e22a0ff007 HTTP/1.1
 
 ### Product create; 
 POST http://127.0.0.1:9090/p/create HTTP/1.1
@@ -12,10 +12,22 @@ Content-Type: application/json
 
     
     {
-        "name": "Producto 1",
-        "description": "Descripción del producto 1",
-        "price": "100",
-        "quantity": "10",
-        "discount": "0",
-        "image": "http://www.google.com/image.jpg"
+        "name": "Producto 17",
+        "description": "Descripción del producto 17",
+        "price": "650",
+        "quantity": "15",
+        "discount": 0,
+        "brand": "62e8642465a2be25ee528889",
+        "image": "http://www.google.com/image5.jpg"
     }
+
+### Product update; 
+PUT http://127.0.0.1:9090/p/62e5a20cc7e924a5c2934fdd HTTP/1.1
+Content-Type: application/json
+
+{
+    "price": "999"
+}
+
+### Product delete;
+DELETE http://127.0.0.1:9090/p/62e5a20cc7e924a5c2934fdd HTTP/1.1

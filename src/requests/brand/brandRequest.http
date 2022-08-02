@@ -1,0 +1,30 @@
+// Brand requests;
+
+### Brand list;
+GET http://127.0.0.1:9090/b/list HTTP/1.1
+
+### Brand detail;
+GET http://127.0.0.1:9090/b/62e877d965a2be25ee52888b HTTP/1.1
+
+### Brand create; 
+POST http://127.0.0.1:9090/b/create HTTP/1.1
+Content-Type: application/json
+
+    
+    { 
+        "name": "Brand 4",
+        "quantityProduct": 0,
+        "description": "Esta es la descripción de la brand 4",
+        "image": "http://www.google.com/image4.jpg"
+    }
+
+### Brand update; 
+PUT http://127.0.0.1:9090/b/62e877d965a2be25ee52888b HTTP/1.1
+Content-Type: application/json
+
+{
+    "description": "Esta es la descripción de la brand 2"
+}
+
+### Brand delete;
+DELETE http://127.0.0.1:9090/b/62e87a3e65a2be25ee52888f HTTP/1.1

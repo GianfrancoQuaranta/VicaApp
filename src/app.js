@@ -4,6 +4,7 @@ const app = express();
 import path from "path";
 import { fileURLToPath } from "url";
 import method from "method-override";
+import morgan from "morgan";
 
 // import enviroment variables;
 import dotenv from "dotenv"
@@ -24,11 +25,15 @@ app.listen(app.get("port"),()=>console.log("Server start http://127.0.0.1:" + ap
 app.use(express.static(path.resolve(__dirname,"../public")));
 
 // method-override;
+app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 app.use(method("method"));
 
 // app.use();
 app.use(mainRouter);
+
+// morgan;
+app.use(morgan("dev"));
 
 // db connect;
 import { dbConnect } from "./helpers/dbConnect.js";
